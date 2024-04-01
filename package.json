@@ -1,0 +1,48 @@
+{
+  "name": "@y0n1/swf-editor-envelope",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/serverless-workflow-text-editor-envelope.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "yarn dlx serve --cors -p 8080 ./dist",
+    "build": "yarn webpack --config workflow-editor-envelope/webpack.config.js --progress",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@kie-tools-core/editor": "^0.32.0",
+    "@kie-tools-core/keyboard-shortcuts": "^0.32.0",
+    "@kie-tools-core/notifications": "^0.32.0",
+    "@kie-tools-core/react-hooks": "^0.32.0",
+    "@kie-tools/serverless-workflow-combined-editor": "^0.32.0",
+    "@kie-tools/serverless-workflow-diagram-editor-envelope": "^0.32.0",
+    "@kie-tools/serverless-workflow-language-service": "^0.32.0",
+    "@kie-tools/serverless-workflow-service-catalog": "^0.32.0",
+    "@kie-tools/serverless-workflow-text-editor": "^0.32.0",
+    "@monaco-editor/react": "^4.6.0",
+    "monaco-editor": "^0.39.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vscode-languageserver-types": "^3.16.0"
+  },
+  "devDependencies": {
+    "@kie-tools/serverless-workflow-diagram-editor-assets": "^0.32.0",
+    "@types/react": "^18.2.73",
+    "css-loader": "^6.10.0",
+    "filemanager-webpack-plugin": "^8.0.0",
+    "monaco-editor-webpack-plugin": "^7.1.0",
+    "sass": "^1.72.0",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "packageManager": "yarn@4.1.1"
+}

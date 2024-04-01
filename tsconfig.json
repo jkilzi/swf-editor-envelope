@@ -1,0 +1,9 @@
+{
+  "include": ["workflow-editor-envelope"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "outDir": "./dist/types",
+    "rootDir": ".",
+    "declaration": true,
+  }
+}
